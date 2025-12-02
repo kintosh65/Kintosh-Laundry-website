@@ -1,0 +1,10 @@
+# Ignore local environment files
+/vendor/
+/node_modules/
+.DS_Store
+*.log
+
+# CRITICAL: DO NOT UPLOAD DATABASE.PHP IF IT CONTAINS PRODUCTION CREDENTIALS
+# For a public repo, you should use environment variables instead of hardcoding.
+# However, if your 'database.php' only has localhost creds, you can skip ignoring it for now.
+# If you used a sensitive password for root/pass, make sure to change it or use environment variables!
