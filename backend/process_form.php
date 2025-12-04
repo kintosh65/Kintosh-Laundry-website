@@ -21,7 +21,7 @@ if (empty($name) || empty($email) || empty($phone) || empty($service) || empty($
 
 //  DATABASE INSERT QUERY
 
-// NOTE: You must ensure your 'bookings' table has a 'phone' column before running this.
+
 $stmt = $conn->prepare("INSERT INTO bookings (name, email, phone, service, pickup, location, message) VALUES (?, ?, ?, ?, ?, ?, ?)");
 $stmt->bind_param("sssssss", $name, $email, $phone, $service, $pickup, $location, $message);
 $stmt->execute();

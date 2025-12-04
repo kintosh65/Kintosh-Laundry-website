@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 // Retrieve database credentials from Render Environment Variables
 // These variables must be set on the Render Web Service dashboard!
 
@@ -23,5 +24,18 @@ if ($conn->connect_error) {
     // Log the error message to help with debugging on Render logs
     error_log("Database Connection Failed: " . $conn->connect_error);
     die("Database Connection Failed: Please check host and credentials.");
+=======
+$host = getenv("DB_HOST");
+$user = getenv("DB_USER");
+$pass = getenv("DB_PASS");
+$dbname = getenv("DB_NAME");
+$port = getenv("DB_PORT");
+
+$conn = new mysqli($host, $user, $pass, $dbname, $port);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+>>>>>>> 73f58ec (Fix DB connection: handle empty DB_PORT and log errors)
 }
 ?>
+
