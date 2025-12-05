@@ -43,6 +43,6 @@ Message: $message
 
 mail($to, $subject, $body);
 
-header("Location: thank_you.php");
+header("Location: /backend/thank_you.php");
 exit;
-?>
+
