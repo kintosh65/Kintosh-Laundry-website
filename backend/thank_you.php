@@ -111,7 +111,8 @@
         <p>Your booking has been successfully submitted.<br>
            Our team will contact you shortly to confirm your laundry pickup.</p>
 
-        <a href="/kintosh-laundry/index.html" class="btn">Return Home</a>
+        <!-- changed to site root -->
+        <a href="/" class="btn">Return Home</a>
     </div>
 
 </body>
